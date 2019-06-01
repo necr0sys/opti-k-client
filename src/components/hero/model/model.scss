@@ -1,0 +1,47 @@
+.model_cont {
+  background: url('../../../images/model-hero-movil.png') no-repeat center bottom;
+  width: 100%;
+  height: 388px;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.vanishIn{
+  animation-name: vanish;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 5s;
+}
+
+@keyframes vanish{
+  0%{
+    
+    opacity: 0;
+  }
+  25%{
+    opacity: 1;
+    filter: blur(5px);
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@media(min-width: 576px) {
+  .model_cont{
+    background: url('../../../images/model-hero-tablet.png') no-repeat center;
+    width: 100%;
+    height: 671px;
+  }
+}
+
+@media(min-width: 1280px){
+ .model_cont{
+  background: url('../../../images/model-hero-desk.png') no-repeat center;
+   height: 600px;
+ } 
+}

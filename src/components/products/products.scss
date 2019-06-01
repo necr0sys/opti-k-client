@@ -1,0 +1,21 @@
+@import '../../scss/variables';
+
+.products_section{
+  overflow: hidden;
+  background: $prim;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  .sub_title_product_body{
+    padding-top: 3rem;
+    padding-left: 5rem;
+    font-size: .8rem;
+    span:nth-child(1){
+      color: $tri;
+      animation-delay: 1s;
+    }
+    span:nth-child(2){
+      color: #fff;
+      animation-delay: 2s;
+    }
+  }
+}

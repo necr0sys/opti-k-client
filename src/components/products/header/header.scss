@@ -1,0 +1,114 @@
+@import '../../../scss/variables';
+.header_product_cont{
+  background: #000;
+  height: 60vh;
+  position: relative;
+  .black_box {
+    position: relative;
+    color: #fff;
+    div{
+      font-size: .8rem;
+      color: #fff;
+      text-transform: capitalize;
+      transform: rotate(-90deg);
+      transform-origin: left top 0;
+      position: absolute;
+      left: 0;
+      bottom: 10vh;
+      .opti_k{
+        color: $sec;
+      }
+    }
+  }
+
+  .header_img{
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../../../images/model-products-desk.jpg') top right no-repeat;
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+    div{
+      height: 10vh;
+      bottom: 0;
+      left: 0;
+      background: rgba(80, 24, 135, .5);
+      width: 100%;
+      position: absolute;
+    }
+  }
+
+  .header_body_cont {
+    position: absolute;
+    width: 90vw;
+    height: 60vh;
+    background: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .1));
+    right: -50%;
+    left: -50%;
+    top: 5vh;
+    margin: 0 auto;
+    z-index: 1;
+    .body_content{
+      background: #333;
+      height: 60vh;
+      padding: 1rem;
+      color: #fff;
+      text-align: center;
+      h2{
+        color: $sec;
+        font-family: "Quicksand Medium";
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 1rem;
+      }
+      .sub_title_product{
+        color: #fff;
+        font-size: .8rem;
+      }
+      .sub_title_product:nth-child(2){
+        color: $sec;
+      }
+      .sub_title_product:nth-child(4){
+        color: $sec;
+      }
+      p{
+        text-align: justify;
+        padding-top: 2rem;
+        font-size: .8rem;
+        font-family: 'Quicksand Light'
+      }
+    }
+  }
+  .btn_contact_producto{
+    position: absolute;
+    bottom: .5rem;
+    right: 2rem;
+    &:hover{
+      border-color: $tri;
+      color: $tri;
+    }
+  }
+}
+
+@media(min-width: 576px) {
+  .header_product_cont{
+    .header_body_cont {
+      .body_content{
+        text-align: left;
+        width: 36.8vw;
+        p{
+          text-align: left;
+          width: 60vw;
+          padding-top: 2rem;
+          font-size: 1.3rem;
+          font-family: 'Quicksand Light'
+        }
+      }
+    }
+    .header_img{
+      height: 70vh;
+    }
+  }
+  .btn_contact_producto{
+    bottom: 5rem;
+  }
+}
+

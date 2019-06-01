@@ -1,0 +1,93 @@
+@import '../../../scss/variables';
+
+.item_cont{
+  width: 60vw;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: -50%;
+  right: -50%;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100vw;
+  margin-top: 2rem;
+  z-index: 5;
+  overflow: hidden;
+  color: $gray1;
+  padding: 4rem;
+  h2{
+    color: $prim;
+  }
+  img{
+    width: 100%;
+  }
+  p{
+    color: $gray1;
+    text-align: justify;
+  }
+  .btn_gallery {
+    position: absolute;
+    top: 50%;
+    background: transparent;
+    border: none;
+    svg{
+      width: 25px;
+      fill: $primd;
+      &:hover{
+        fill: $prim;
+      }
+    }
+  }
+  .btn_back{  
+    left: .3rem;
+  }
+  .btn_next{
+    right: .3rem;
+  }
+  .btn_close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #333;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    &:focus{
+      outline: none;
+    }
+    &:hover{
+      color: $prim;
+      text-decoration: underline;
+    }
+  }
+}
+.btn_tienda{
+  bottom: 1rem;
+  right: 1rem;
+  position: absolute;
+  border: 1px solid $tri;
+  color: $tri;
+  &:hover{
+    background: $tri;
+    color: #fff;
+    border-color: #fff;
+  }
+}
+
+@media(min-width: 576px) {
+  .item_cont{
+    width: 60vw;
+    background: #fff;
+    position: absolute;
+    top: 25vh;
+    left: -50%;
+    right: -50%;
+    margin: 0 auto;
+    height: 60vh;
+    margin-top: 2rem;
+    z-index: 5;
+    overflow: hidden;
+    color: $gray1;
+    padding: 4rem;
+  }
+}

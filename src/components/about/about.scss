@@ -1,0 +1,115 @@
+@import '../../scss/variables';
+
+.about_cont{
+  background: url('../../images/about-movil2.jpg') top center;
+  background-size: cover;
+  height: 100vh;
+  
+  position: relative;
+  overflow: hidden;
+}
+.about_boxes{
+  display: flex;
+  width: 50vw;
+  align-items: center;
+  font-family: 'Panton';
+  position: absolute;
+  height: 100vh;
+  z-index: 80;
+}
+#about_box_1{
+  justify-content: flex-end;
+  background: $sec;
+  left: 0;
+  p{
+    font-size: 2.5rem;
+  }
+}
+#about_box_2{
+  justify-content: flex-start;
+  color: #fff;
+  background: $prim;
+  right: 0px;
+  p{
+    font-size: 2.5rem;
+  }
+}
+
+.my_blink_left {
+  animation-name: blink_left;
+  animation-duration: 2s;
+  animation-direction: alternate;
+}
+
+@keyframes blink_left {
+  0%{
+    background: $prim;
+    color: #fff;
+  }
+  25%{
+    background: $sec;
+    color: #333;
+  }
+  50%{
+    background: $prim;
+    color: #fff;
+  }
+  100%{
+    background: $sec;
+    color: #333;
+  }
+}
+
+.my_blink_right {
+  animation-name: blink_right;
+  animation-duration: 2s;
+  animation-direction: alternate;
+}
+
+@keyframes blink_right {
+  0%{
+    background: $sec;
+    color: #333;
+  }
+  25%{
+    background: $prim;
+    color: #fff;
+  }
+  50%{
+    background: $sec;
+    color: #333;
+  }
+  100%{
+    background: $prim;
+    color: #fff;
+  }
+}
+
+.btn_cont{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 7rem;
+  a{
+    animation-delay: 3.5s;
+  }
+}
+
+@media(min-width: 576px) {
+  .about_cont{
+    background: url('../../images/about-desk2.jpg') top center;
+    background-size: cover;
+  }
+  .btn_cont{
+    position: absolute;
+    text-align: right;
+    padding-right: 5rem;
+    bottom: 5rem;
+    a{
+      font-size: 2rem;
+      border-radius: 35px;
+      border-width: 4px;
+      animation-delay: 3.5s;
+    }
+  }  
+}

@@ -1,0 +1,10 @@
+.social_ico{
+  display: inline;
+  margin: .6rem;
+  svg{
+    width: 20px;
+    &:hover{
+      fill:#fff;
+    }
+  }
+}

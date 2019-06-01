@@ -1,0 +1,40 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import './scss/variables';
+@font-face {
+  font-family: 'Panton';
+  src: url('./fonts/panton.black-caps-webfont.woff') format('woff'),
+       url('./fonts/panton.black-caps-webfont.woff2') format('woff2');
+}
+
+html{
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+body{
+  font-family: 'Quicksand';
+  background: #fff;
+  color: $gray1;
+}
+
+a{
+  color: $tri;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: 300;
+}
+
+ul, ol, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#foo{
+  transition: 10s;
+  background: black;
+  color: #fff;
+  margin-top: 100px;
+  height: 500px;
+}

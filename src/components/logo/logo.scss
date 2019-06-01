@@ -1,0 +1,21 @@
+@import '../../scss/variables';
+
+.logo{
+  font-size: .5rem;
+  font-family: 'Panton';
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: .5s;
+  border: 2px solid $gray2;
+  color: rgba(255, 255, 255, .7);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover{
+    color: #fff;
+    border-color: #fff;
+  }
+}

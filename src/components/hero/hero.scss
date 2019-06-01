@@ -1,0 +1,52 @@
+@import '../../scss/variables';
+
+.hero_section{
+  background: url('../../images/patron-op-15.svg') top left, linear-gradient(45deg,$four 0%, $prim 35%),;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  .logo_full {
+    margin-top: 25vh;
+    width: 180px;
+  }
+}
+
+.vanishIn{
+  animation-name: vanish;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 3.5s;
+}
+
+@keyframes vanish{
+  0%{
+    
+    opacity: 0;
+  }
+  25%{
+    opacity: 1;
+    filter: blur(5px);
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@media(min-width: 576px) {
+ .hero_section{
+    .logo_full {
+      margin-top: 25vh;
+      width: 300px;
+    }
+  }
+}
+
+@media(min-width: 1280px){
+  .hero_section{
+    .logo_full {
+      margin-top: 5vh;
+      width: 250px;
+    }
+  }
+}

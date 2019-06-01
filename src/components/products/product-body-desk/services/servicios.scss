@@ -1,0 +1,16 @@
+@import '../../../../scss/variables';
+
+.servicio_cont{
+  color: #fff;
+  h4{
+    color: $sec;
+    font-family: 'quicksand light';
+    text-transform: uppercase;
+    text-align: center;
+  }
+  p{
+    text-align: justify;
+    font-size: 'quicksand light';
+    font-size: .8rem;
+  }
+}

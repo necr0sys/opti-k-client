@@ -1,0 +1,55 @@
+@import '../../../../scss/variables';
+
+.product_nav_cont{
+  color: rgba(255, 255, 255, .5);
+  overflow: hidden;
+  .index_cont{
+    display: inline-block;
+  }
+  .pre_line{
+    width: 3rem;
+    display: inline-block;
+    transition: .5s;
+    color: transparent;
+  }
+  p{
+    display: inline-block;
+    width: 1rem;
+    text-align: left;
+    transition: .5s;
+  }
+  button{
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, .5);
+    font-family: 'Quicksand Medium';
+    transition: .5s;
+    text-transform: uppercase;
+    &:focus{
+      outline: none;
+    }
+  }
+}
+
+.product_nav_cont:hover{
+  .pre_line{
+    border-bottom: 1px solid $tri !important;
+  }
+  p{
+    border-bottom: 1px solid $tri;
+    color: $tri !important;
+  }
+  button{
+    color: $tri !important;
+  }
+}
+
+.product_nav_cont:active{
+  p{
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    color: rgba(255, 255, 255, .5);
+  }
+  button{
+    color: rgba(255, 255, 255, .5);
+  }
+}

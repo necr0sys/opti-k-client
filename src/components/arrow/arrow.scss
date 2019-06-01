@@ -1,0 +1,50 @@
+@import '../../scss/variables';
+
+.arrow{
+ display: block;
+ position: fixed;
+ z-index: 100;
+ right: 15px;
+ bottom: 15px;
+ background: transparent;
+ border: 0;
+ outline: none;
+ &:focus {
+   outline: none;
+ }
+  svg{
+    fill: $sec;
+    width:50px;
+    transition: .5s;
+  }
+  svg:hover{
+    fill: $tri;
+  }
+}
+.my_bounce {
+  animation-name: my_bounce;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.rotate {
+  animation-name: rotate;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  svg{
+    fill: $tri;
+  }
+}
+
+@keyframes my_bounce {
+  100%{
+    transform: translateY(12px)
+  }
+}
+
+@keyframes rotate{
+  100%{
+    transform: rotate(180deg);
+  }
+}

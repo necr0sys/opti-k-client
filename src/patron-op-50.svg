@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33.13" height="38.72" viewBox="0 0 33.13 38.72">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        opacity: 0.5;
+      }
+
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_78);
+      }
+
+      .cls-2 {
+        fill: url(#Degradado_sin_nombre_78-2);
+      }
+    </style>
+    <radialGradient id="Degradado_sin_nombre_78" data-name="Degradado sin nombre 78" cx="6.02" cy="-13.71" r="14.14" gradientTransform="translate(0 47.44) scale(1 1.03)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#93278f"/>
+      <stop offset="1" stop-color="#662d91"/>
+    </radialGradient>
+    <radialGradient id="Degradado_sin_nombre_78-2" cx="19.2" cy="-32.55" r="14.14" xlink:href="#Degradado_sin_nombre_78"/>
+  </defs>
+  <title>patron-op-50</title>
+  <g id="Capa_2" data-name="Capa 2">
+    <g id="hero">
+      <ellipse class="cls-1" cx="9.97" cy="29.03" rx="9.97" ry="9.69"/>
+      <ellipse class="cls-2" cx="23.16" cy="9.69" rx="9.97" ry="9.69"/>
+    </g>
+  </g>
+</svg>

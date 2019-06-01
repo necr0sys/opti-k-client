@@ -1,0 +1,20 @@
+@import '../../scss/variables';
+
+.about2_cont{
+  background: linear-gradient(45deg,$four 0%, $prim 35%);
+  opacity: 0;
+  color: #fff;
+  animation-fill-mode: forwards;
+  padding: 4rem 0;
+  overflow: hidden;
+  h2{
+    color: $sec;
+    text-align: center;
+    margin: 2rem;
+  }
+  p{
+    text-align: justify;
+    padding: 0 1.5rem;
+    font-size: .8rem;
+  }
+}

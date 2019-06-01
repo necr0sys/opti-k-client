@@ -1,0 +1,21 @@
+@import '../../../scss/variables';
+
+.btn_resp{
+  background: transparent;
+  border: 1px solid $gray2;
+  outline: none;
+  border-radius: 3px;
+  svg{
+    fill:$gray2;
+    width: 15px;
+    &:hover{
+      fill: #fff;
+    }
+  }
+  &:hover{
+    border-color: #fff;
+  }
+  &:focus{
+    outline: none;
+  }
+}

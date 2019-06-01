@@ -1,0 +1,20 @@
+@import '../../scss/variables';
+
+.msg_cont{
+  position: absolute;
+  bottom: 0;
+  text-transform: capitalize;
+  text-align: left;
+  h2{
+    text-align: left;
+    margin: .1rem;
+    display: inline-block;
+    background: $prim;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  ul{
+    background: $sec;
+    display: inline-block;
+  }
+}

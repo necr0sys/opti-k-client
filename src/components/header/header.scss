@@ -1,0 +1,24 @@
+@import '../../scss/variables';
+
+header{
+  position: fixed;
+  z-index: 5000;
+  width: 100%;
+  background: rgba(134, 58, 209, 0.8);
+}
+.my_header_inVisible{
+  height: 0px;
+  transition: .3s;
+}
+
+.my_header_visible{
+  transition: .3s;
+  height: 70px;
+}
+
+.top_nav{
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,94 @@
+@import '../../../scss/variables';
+
+.nav_cont{
+  position: fixed;
+  z-index: 101;
+  right: 0;
+  top: 15vh;
+  .nav_item{
+    position: absolute;
+    display: block;
+    font-size: .7rem;
+    color: #fff;
+    background: #333;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .5rem;
+    transition: .5s;
+  }
+  .nav_item:nth-child(1){
+    top: 0;
+    right: .3rem;
+    font-size: .5rem;
+    width: 50px;
+    height: 50px;
+    background-color: $fourd;
+    &:hover{
+      background: $four;
+    }
+  }
+  .nav_item:nth-child(2){
+    top:3.3rem;
+    right: .5rem;
+    width: 60px;
+    height: 60px;
+    background: $secd;
+    &:hover{
+      background: $sec;
+    }
+  }
+  .nav_item:nth-child(3){
+    top: 7rem;
+    right: .5rem;
+    font-size: .6rem;
+    width: 48px;
+    height: 48px;
+    background: $trid;
+    &:hover{
+      background: $tri;
+    }
+  }
+  .nav_item:nth-child(4){
+    top: 9.7rem;
+    right: 0;
+    font-size: .6rem;
+    width: 38px;
+    height: 38px;
+    background: $fid;
+    &:hover{
+      background: $fi;
+    }
+  }
+}
+
+@media(min-width: 576px){
+  .nav_cont{
+    .nav_item:nth-child(1){
+      width: 70px;
+      height: 70px;
+    }
+    .nav_item:nth-child(2){
+      top: 4.3rem;
+      width: 80px;
+      height: 80px;
+    }
+    .nav_item:nth-child(3){
+      top: 9rem;
+      width: 68px;
+      height: 68px;
+    }
+    .nav_item:nth-child(4){
+      top: 13rem;
+      width: 58px;
+      height: 58px;
+    }
+  }
+}
+
+@media(min-width: 1280px){
+  
+}

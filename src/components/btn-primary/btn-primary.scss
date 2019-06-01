@@ -1,0 +1,20 @@
+@import '../../scss/variables';
+
+.btn_primary {
+  display: inline-block;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  text-transform: capitalize;
+  padding: 0 1.5rem;
+  text-decoration: none;
+  font-size: 1.3rem;
+  border-radius: 25px;
+  background: transparent;
+  font-weight: lighter;
+  transition: .3s;
+  &:hover{
+    border-color: $tri;
+    color: $tri;
+    text-decoration: none;
+  }
+}

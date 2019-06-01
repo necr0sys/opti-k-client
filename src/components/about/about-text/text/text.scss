@@ -1,0 +1,67 @@
+@import '../../../../scss/variables';
+
+.text {
+  color: #fff;
+  position: absolute;
+  text-transform: capitalize;
+}
+.text:nth-child(1){
+  right: 50px;
+  top: 0;
+}
+.text:nth-child(2){
+  right: 100px;
+  top: 15px;
+  font-size: 1.5rem;
+}
+.text:nth-child(3){
+  right: 70px;
+  top: 40px;
+  font-size: 1.2rem
+}
+.text:nth-child(4){
+  right: 40px;
+  top: 60px;
+  font-size: .8rem;
+}
+.eternal_move{
+  animation-name: eternal_move;
+  animation-delay: 1s;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes eternal_move{
+  0%{
+    opacity: .5;
+  }
+  100%{
+    right: 30px;
+    opacity: 1;
+  }
+}
+
+@media(min-width: 576px) {
+  .text:nth-child(1){
+    right: 50px;
+    top: 0;
+    font-size: 4rem;
+  }
+  .text:nth-child(2){
+    right: 100px;
+    top: 70px;
+    font-size: 4.5rem;
+  }
+  .text:nth-child(3){
+    right: 70px;
+    top: 140px;
+    font-size: 4.3rem
+  }
+  .text:nth-child(4){
+    right: 40px;
+    top: 210px;
+    font-size: 3.8rem;
+  }
+}
